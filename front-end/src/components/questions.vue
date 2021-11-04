@@ -15,7 +15,9 @@
       {{question.option2}}
     </div>
    </div>
-   <button @click="randomQuestion">New Question</button>
+   <div class="button">
+   <button id= "but" @click="randomQuestion">New Question</button>
+   </div>
 
  </div>
 </div>
@@ -130,8 +132,10 @@ console.log("got comments????");
  background: #e74c3c;
  border-radius: 100px 100px 100px 100px;
 
-
-
+ display: flex;
+   justify-content: center;
+   align-items: center;
+font-size: 30px;
  }
 
  .or {
@@ -145,6 +149,10 @@ console.log("got comments????");
  width: 400px;
  background: #e74c3c;
  border-radius: 100px 100px 100px 100px;
+ display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
  }
 
 
@@ -184,6 +192,17 @@ console.log("got comments????");
  text-size:50px;
  }
 
+ .button {
+ display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ #but {
+ width: 200px;
+ height: 30px;
+ }
 
  a { text-decoration: none; }
 

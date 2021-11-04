@@ -19,7 +19,9 @@
         </div>
 
        </div>
-       <button class="submit" @click="addQuestion">Add Question</button>
+       <div class="submit">
+       <button id="sub" @click="addQuestion">Add Question</button>
+       </div>
        <div v-if="questions" class="questionsList">
        <div  v-for="question in questions" v-bind:key="question._id">
        {{question.option1}} or {{question.option2}} <button @click="deleteQuestion(question)">Delete</button> <button @click="editQuestion(question)">Edit</button>
@@ -131,7 +133,7 @@
  }
 
  .menu {
- height: 50%;
+ height: auto;
  width: 70%;
  background: #C0C0C0; /* silver */
  border-radius: 100px 100px 100px 100px;
@@ -144,6 +146,8 @@
 
  .menu p {
  text-align: center;
+
+
  }
 
  .choices {
@@ -162,6 +166,9 @@
  width: 400px;
  background: #e74c3c;
  border-radius: 100px 100px 100px 100px;
+ display: flex;
+   justify-content: center;
+   align-items: center;
 
 
 
@@ -178,6 +185,9 @@
  width: 400px;
  background: #e74c3c;
  border-radius: 100px 100px 100px 100px;
+ display: flex;
+   justify-content: center;
+   align-items: center;
  }
 
 
@@ -216,7 +226,24 @@ right: 30%;
 text-size:50px;
 }
 
+.submit {
+display: flex;
+  justify-content: center;
+  align-items: center;
+margin-bottom: 20px;
+}
+
+#sub {
+width: 200px;
+height: 30px;
+}
 
  a { text-decoration: none; }
+.questionsList {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
+}
  </style>

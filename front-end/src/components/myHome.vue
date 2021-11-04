@@ -105,7 +105,9 @@ height: 200px;
 width: 400px;
 background: #e74c3c;
 border-radius: 100px 100px 100px 100px;
-
+display: flex;
+  justify-content: center;
+  align-items: center;
 
 
 }
@@ -121,6 +123,9 @@ height: 200px;
 width: 400px;
 background: #e74c3c;
 border-radius: 100px 100px 100px 100px;
+display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
